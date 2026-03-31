@@ -135,6 +135,7 @@ export default function App() {
             >
               Resume
             </motion.a>*/}
+
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -147,8 +148,9 @@ export default function App() {
               {theme === 'dark' ? <Sun size={24} /> : <Moon size={24} />}
             </button>
             <button 
-              className="text-accent-cyan"
+              className="text-accent-cyan relative z-50"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle Menu"
             >
               {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -175,15 +177,14 @@ export default function App() {
                 </motion.div>
               ))}
               <a 
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1fhVIzu_mgjh2vlqLWkHTVaBE9t7Brr0d/view?usp=sharing"
                 className="px-8 py-3 border border-accent-cyan text-accent-cyan text-lg font-mono rounded"
               >
                 Resume
               </a>
             </motion.div>
           )}
-        </AnimatePresence>
-        */}
+        </AnimatePresence>*/}
       </nav>
 
       <main className="max-w-7xl mx-auto px-6 md:px-12 pt-32">
@@ -261,8 +262,8 @@ export default function App() {
         {/* About Section */}
         <section id="about" className="mb-48 scroll-mt-32">
           <SectionTitle number="01" title="About Me" />
-          <div className="max-w-5xl mx-auto text-center">
-            <div className="text-text-secondary space-y-6 text-lg mb-12">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-text-secondary space-y-6 text-lg mb-12 text-left">
               <p>
                 I'm a backend engineer with 4+ years of experience building and maintaining production-grade systems. My day-to-day sits deep in the backend — writing robust service logic, designing database schemas, debugging complex production issues, and collaborating with teams on high-level architecture decisions.
               </p>
