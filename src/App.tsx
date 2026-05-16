@@ -288,7 +288,7 @@ export default function App() {
                 {[
                   "Java", "Javascript", "Typescript", "Node.js", "express.js", 
                   "MonogDB", "MySQL", "PostgreSQL", "Python", "Spring boot", 
-                  "Fastify", "LangChain", "Generative AI", "GCP", "ReactJs", "HTML5", "CSS", 
+                  "Fastify", "LangChain", "Generative AI", "RAG", "GCP", "ReactJs", "HTML5", "CSS", 
                   "Docker (prior knowledge)", "Git & GitHub", "FastAPI"
                 ].map((skill) => (
                   <div key={skill} className="flex items-center gap-2 text-text-secondary text-sm font-mono hover:text-accent-cyan transition-colors cursor-default">
